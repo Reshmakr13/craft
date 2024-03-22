@@ -1,6 +1,6 @@
 <div class=" max-w-xs sm:max-w-sm: lg:max-w-72 xl:max-w-xs shadow-[0px_10px_12px_-4px_rgba(0,0,0,0.3)]">
     <div class="flex w-full mt-4 ">
-        <div class="1/4 ml-2">
+        <div class="w-1/4 ml-2">
             <img src="/images/icons/double qoute left1.png" class="h-16" alt="">
         </div>
         <div class="w-3/4 ml-4">
