@@ -14,6 +14,10 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                gothic:['Didact Gothic','sans-serif'],
+                gothic1:['Century Gothic','sans-serif'],
+                franklin:['Franklin Gothic','sans-serif'],
+                questrial:['Questrial','sans-serif'],
             },
             minWidth: {
                 '1': '.25rem',
@@ -127,6 +131,16 @@ export default {
                 '4/5': '80vh',
                 '9/10': '90vh',
             },
+            colors:{
+                'gray':'#D9D9D9',
+                'pink':'#e964a0',
+                'blue':'#2962A6',
+                'lightgray':'#eeeeee',
+                'darkpink':'#872850',
+                'darkgray':'#676868',
+                'yellow':'#FBBC04',
+                'gray-600':'#353535',
+            }
         },
     },
 

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ProfileController;
 use Modules\Ynotz\EasyAdmin\Services\RouteHelper;
+use App\Http\Controllers\PageController;
 use Modules\Ynotz\AppSettings\Http\Controllers\AppSettingsController;
 
 /*
@@ -17,9 +18,14 @@ use Modules\Ynotz\AppSettings\Http\Controllers\AppSettingsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/homecomponent', [PageController::class, 'homecomponent'])->name('homecomponent');
+Route::get('/homedemo', function () {
+    return view('pages.homedemo');});
+Route::get('/header', function () {
+        return view('pages.header');}); 
+Route::get('/newpage', function () {
+        return view('pages.newpage');});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
