@@ -34,6 +34,9 @@ Route::get('/booking_stage_3', function () {
     return view('pages.bookingstage_3');})->name('bookingstage_2');
 Route::get('/booking_stage_2', function () {
         return view('pages.bookingstage_2');})->name('bookingstage_3');
+Route::post('/booking', function () {
+    return view('pages.booking');})->name('booking');
+    
 
 Route::get('/dashboard', function () {
     return view('dashboard');

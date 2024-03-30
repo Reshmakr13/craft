@@ -14,12 +14,17 @@
     <div class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto text-darkgray font-franklin text-sm mt-16 pb-8">
         <p class="text-xl lg:text-4xl">Book An Appointment</p>
         <p class="text-xs lg:text-base mt-2">Feel free to contact us any time. We will get back to you as soon as we can!</p>
-        <div x-data={select:stage-1} class="flex flex-col gap-4">
-            <span class="mt-10 "><x-booking-stage-component/></span>
-            <div x-show="stage-1">
-                <span class="lg:mt-10"><x-booking-form/></span>
-                <span class="lg:mt-10"><x-booking-button-component /></span>
-            </div>
+        <div x-data="{ tab : 0  }" class="flex flex-col gap-4">
+            
+            <x-booking-stage-component/>
+
+            
+            <x-bookingstage1 />
+            <x-bookingstage2 />
+            <x-bookingstage3 />
+            
+            
+        </div>
         </div>
     </div>
     </div>
