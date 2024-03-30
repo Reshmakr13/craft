@@ -26,6 +26,14 @@ Route::get('/header', function () {
         return view('pages.header');}); 
 Route::get('/newpage', function () {
         return view('pages.newpage');});
+Route::get('/contact', function () {
+            return view('pages.contact');});
+Route::get('/booking_stage_1', function () {
+        return view('pages.bookingstage_1');})->name('bookingstage_1');
+Route::get('/booking_stage_3', function () {
+    return view('pages.bookingstage_3');})->name('bookingstage_2');
+Route::get('/booking_stage_2', function () {
+        return view('pages.bookingstage_2');})->name('bookingstage_3');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
