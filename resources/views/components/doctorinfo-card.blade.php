@@ -1,4 +1,4 @@
-<div class="flex flex-col md:flex-row border border-blue/50 rounded-xl md:gap-x-3 lg:gap-x-1 ">
+<div class="flex flex-col md:flex-row border border-blue/50 rounded-xl md:gap-x-3 lg:gap-x-1  p-4">
     <div class="md:w-1/4 flex justify-center md:justify-start mt-6 mx-auto">
         <x-doctorcard-component />
     </div>
