@@ -1,6 +1,6 @@
 <div>
 <div>
-   <div class="w-56  shadow-[0px_10px_12px_-4px_rgba(0,0,0,0.3)] ">
+   <div class="w-56 bg-white shadow-[0px_10px_12px_-4px_rgba(0,0,0,0.3)] ">
       <div class="ml-4 font-semibold ">
          <p class="text-xl font-franklin pt-6">Dr. C. Mohamed </p>
          <p class="text-xl font-franklin">Ashraf</p>
