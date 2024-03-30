@@ -8,7 +8,7 @@
         @stack('css')
         @stack('header_js')
 </head>
-<body>
+<body  class="bg-white items-center max-w-7xl  mx-auto ">
     
 </body>
 </html>
