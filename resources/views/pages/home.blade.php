@@ -328,7 +328,7 @@
         </div>
 
         
-     <x-button-component class="bg-pink"/>   
+     
     </div>
         
 </div>

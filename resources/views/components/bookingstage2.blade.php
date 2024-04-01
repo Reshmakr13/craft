@@ -28,42 +28,42 @@
 
             
                 <p class="text-base mt-6">Select Preffered Time </p>
-                <ul   class="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-8 gap-y-6 lg:gap-x-4 xl:justify-between mt-4">
-                    <li :="{'shadow-xl':selected === null}"><x-booking-time-component/></li>
-                    <li><x-booking-time-component :time="'9:15 AM'"/></li>
-                    <li><x-booking-time-component :time="'9:30 AM'"/></li>
-                    <li><x-booking-time-component :time="'9:45 AM'"/></li>
-                    <li><x-booking-time-component :time="'10:00 AM'"/></li>
-                    <li><x-booking-time-component :time="'10:15 AM'"/></li>
-                    <li><x-booking-time-component :time="'10:30 AM'"/></li>
-                    <li><x-booking-time-component :time="'10:45 AM'"/></li>
-                    <li><x-booking-time-component :time="'11:00 AM'"/></li>
-                    <li><x-booking-time-component :time="'11:15 AM'"/></li>
-                    <li><x-booking-time-component :time="'11:30AM'"/></li>
-                    <li><x-booking-time-component :time="'11:45 AM'"/></li>
-                    <li><x-booking-time-component :time="'12:00 PM'"/></li>
-                    <li><x-booking-time-component :time="'12:15 PM'"/></li>
-                    <li><x-booking-time-component :time="'12:30 PM'"/></li>
-                    <li><x-booking-time-component :time="'12:45 PM'"/></li>
-                    <li><x-booking-time-component :time="'1:00 PM'"/></li>
-                    <li><x-booking-time-component :time="'1:15 PM'"/></li>
-                    <li><x-booking-time-component :time="'1:30 PM'"/></li>
-                    <li><x-booking-time-component :time="'1:45 PM'"/></li>
-                    <li><x-booking-time-component :time="'2:00 PM'"/></li>
-                    <li><x-booking-time-component :time="'2:15 PM'"/></li>
-                    <li><x-booking-time-component :time="'2:30 PM'"/></li>
-                    <li><x-booking-time-component :time="'2:45 PM'"/></li>
-                    <li><x-booking-time-component :time="'3:00 PM'"/></li>
-                    <li><x-booking-time-component :time="'3:15 PM'"/></li>
-                    <li><x-booking-time-component :time="'3:30 PM'"/></li>
-                    <li><x-booking-time-component :time="'3:45 PM'"/></li>
-                    <li><x-booking-time-component :time="'4:00 PM'"/></li>
-                    <li><x-booking-time-component :time="'4:15 PM'"/></li>
-                    <li><x-booking-time-component :time="'4:30 PM'"/></li>
-                    <li><x-booking-time-component :time="'4:45 PM'"/></li>
+                <ul x-data = "{time:null}"  class="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-8 gap-y-6 lg:gap-x-4 xl:justify-between mt-4">
+                    <li :disabled="!selected" @click.prevent="time = 'slot-1'"  :class="{ 'border border-blue': time === 'slot-1' }"><x-booking-time-component/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-2'" :class="{ 'border border-blue': time === 'slot-2' }"><x-booking-time-component :time="'9:15 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-3'" :class="{ 'border border-blue': time === 'slot-3' }"><x-booking-time-component :time="'9:30 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-4'" :class="{ 'border border-blue': time === 'slot-4' }"><x-booking-time-component :time="'9:45 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-5'" :class="{ 'border border-blue': time === 'slot-5' }"><x-booking-time-component :time="'10:00 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-6'" :class="{ 'border border-blue': time === 'slot-6' }"><x-booking-time-component :time="'10:15 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-7'" :class="{ 'border border-blue': time === 'slot-7' }"><x-booking-time-component :time="'10:30 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-8'" :class="{ 'border border-blue': time === 'slot-8' }"><x-booking-time-component :time="'10:45 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-9'" :class="{ 'border border-blue': time === 'slot-9' }"><x-booking-time-component :time="'11:00 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-10'" :class="{ 'border border-blue': time === 'slot-10' }"><x-booking-time-component :time="'11:15 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-11'" :class="{ 'border border-blue': time === 'slot-11' }"><x-booking-time-component :time="'11:30AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-12'" :class="{ 'border border-blue': time === 'slot-12' }"><x-booking-time-component :time="'11:45 AM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-13'" :class="{ 'border border-blue': time === 'slot-13' }"><x-booking-time-component :time="'12:00 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-14'" :class="{ 'border border-blue': time === 'slot-14' }"><x-booking-time-component :time="'12:15 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-15'" :class="{ 'border border-blue': time === 'slot-15' }"><x-booking-time-component :time="'12:30 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-16'" :class="{ 'border border-blue': time === 'slot-16' }"><x-booking-time-component :time="'12:45 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-17'" :class="{ 'border border-blue': time === 'slot-17' }"><x-booking-time-component :time="'1:00 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-18'" :class="{ 'border border-blue': time === 'slot-18' }"><x-booking-time-component :time="'1:15 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-19'" :class="{ 'border border-blue': time === 'slot-19' }"><x-booking-time-component :time="'1:30 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-20'" :class="{ 'border border-blue': time === 'slot-20' }"><x-booking-time-component :time="'1:45 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-21'" :class="{ 'border border-blue': time === 'slot-21' }"><x-booking-time-component :time="'2:00 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-22'" :class="{ 'border border-blue': time === 'slot-22' }"><x-booking-time-component :time="'2:15 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-23'" :class="{ 'border border-blue': time === 'slot-23' }"><x-booking-time-component :time="'2:30 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-24'" :class="{ 'border border-blue': time === 'slot-24' }"><x-booking-time-component :time="'2:45 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-25'" :class="{ 'border border-blue': time === 'slot-25' }"><x-booking-time-component :time="'3:00 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-26'" :class="{ 'border border-blue': time === 'slot-26' }"><x-booking-time-component :time="'3:15 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-27'" :class="{ 'border border-blue': time === 'slot-27' }"><x-booking-time-component :time="'3:30 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-28'" :class="{ 'border border-blue': time === 'slot-28' }"><x-booking-time-component :time="'3:45 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-29'" :class="{ 'border border-blue': time === 'slot-29' }"><x-booking-time-component :time="'4:00 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-30'" :class="{ 'border border-blue': time === 'slot-30' }"><x-booking-time-component :time="'4:15 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-31'" :class="{ 'border border-blue': time === 'slot-31' }"><x-booking-time-component :time="'4:30 PM'"/></li>
+                    <li :disabled="!selected"  @click.prevent="time = 'slot-32'" :class="{ 'border border-blue': time === 'slot-32' }"><x-booking-time-component :time="'4:45 PM'"/></li>
                 </ul>
                 <span class="mt-10 flex justify-end" @click.prevent="tab = 2 "><x-booking-button-component/></span>
-    </form>
+</form>
 </div>
-               
+          
 </div>
