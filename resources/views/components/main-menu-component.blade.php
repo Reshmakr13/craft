@@ -14,7 +14,7 @@
                                 </div>
                                 <div class="flex flex-row items-center space-x-1 rtl:space-x-reverse ">
                                     <img src="/images/icons/medicine logo.png" class="h-3 2xl:h-5"alt="">
-                                    <p class=" text-xs lg:text-sm 2xl:text-base font-light font-questrial">International Patients</p>
+                                    <p class=" text-xs lg:text-sm 2xl:text-base font-light font-questrial">{{ __('main_menu.international') }}</p>
                                 </div>
                         </div>
                     
@@ -31,10 +31,10 @@
                             </button>
                             <div x-show="open" class="absolute  bg-white/75 shadow-xl ">
                                 <ul class="flex flex-col p-2 py-4 space-y-2">
-                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-12">About CRAFT</a></li>
-                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-6">Message from Chairman</a></li>
-                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-8">International Patients</a></li>
-                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-10">Our Achievements</a></li>
+                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-12">{{ __('main_menu.about') }}</a></li>
+                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-6">{{ __('main_menu.message') }}</a></li>
+                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-8">{{ __('main_menu.international') }}</a></li>
+                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-10">{{ __('main_menu.achievements') }}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -47,19 +47,19 @@
                             </button>
                             <div x-show="open" class="absolute  bg-white/75 shadow-xl">
                                 <ul class="grid grid-cols-3 gap-4 p-4">
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">IVF Lab and Embriology</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Female Fertility</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Male Fertility</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Sperm and Embrio Freezing</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Medical Genetics</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Reproduction Surgery</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Antenatal Care</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Foetal Medicine</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Painless Labour</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Neonate and Pediatric care</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Assisting Departments</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Accormation at CRAFT</a></li>
-                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">Medical Insurance</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.ivf') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.f_fertility') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.m_fertility') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.freezing') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.genetics') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.surgery') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.antenatal') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.foetal') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.labour') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.pediatric') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.assisting') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.accommodation') }}</a></li>
+                                    <li  class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center">{{ __('main_menu.insurance') }}</a></li>
                                     
                                 </ul>
                             </div>
