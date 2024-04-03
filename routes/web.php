@@ -40,6 +40,8 @@ Route::get('/booking', function () {
         return view('pages.booking');})->name('booking');
 Route::get('/doctorinfo', function () {
     return view('pages.doctorinfo');})->name('doctorinfo');
+Route::get('/homekochi', function () {
+    return view('pages.home_kochi');})->name('homekochi');
     
 
 Route::get('/dashboard', function () {

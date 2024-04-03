@@ -8,7 +8,7 @@
     @stack('css')
     @stack('header_js')
 </head>
-<body class="bg-white items-center max-w-7xl  mx-auto ">
+<body x-data="initPage" x-init="initAction();" class="bg-white items-center max-w-7xl  mx-auto ">
     <div>
     <x-main-menu-component/>
     <div class="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto text-darkgray font-franklin text-sm mt-16 pb-8">
@@ -28,6 +28,6 @@
         </div>
     </div>
     </div>
-    
+   <x-progress-bar/> 
 </body>
 </html>

@@ -31,7 +31,7 @@
                             </button>
                             <div x-show="open" class="absolute  bg-white/75 shadow-xl ">
                                 <ul class="flex flex-col p-2 py-4 space-y-2">
-                                    <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-12">{{ __('main_menu.about') }}</a></li>
+                                    <li class=" hover:text-pink cursor-pointer"><a href="{{route('bookingstage_1')}}"class="font-questrial text-center  px-12">{{ __('main_menu.about') }}</a></li>
                                     <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-6">{{ __('main_menu.message') }}</a></li>
                                     <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-8">{{ __('main_menu.international') }}</a></li>
                                     <li class=" hover:text-pink cursor-pointer"><a class="font-questrial text-center  px-10">{{ __('main_menu.achievements') }}</a></li>

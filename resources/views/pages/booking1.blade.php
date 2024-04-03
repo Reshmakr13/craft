@@ -15,6 +15,7 @@
     <span class="lg:mt-10"><x-booking-form/></span>
     <span class="lg:mt-10"><x-booking-button-component /></span>
 </div>
-</div>   
+</div> 
+<x-progress-bar />  
 </body>
 </html>

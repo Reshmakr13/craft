@@ -21,6 +21,14 @@ return[
    'doctor_vdo' => 'Doctor\'s Video',
    'patient_vdo' => 'Patient Video',
    'testimonial' => 'Patient Testimonials',
+   'about_us' => 'About us',
+   'looking_for' => 'I’m Looking For',
+   'guide' => 'Patient Guide',
+   'training' => 'Training Courses',
+   'contact' => 'Contact Us',
+   'ebook' => 'E Book',
+   'blogs' => 'Blogs',
+   
    
 ];
 ?>

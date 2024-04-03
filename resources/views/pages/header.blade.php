@@ -8,7 +8,7 @@
         @stack('css')
         @stack('header_js')
 </head>
-<body  class="bg-white items-center max-w-7xl  mx-auto ">
+<body x-data="initPage" x-init="initAction();" class="bg-white items-center max-w-7xl  mx-auto ">
 <div>
     <div class="z-0 relative">
         <div class="absolute hidden lg:block bg-gray top-0 ltr:right-24 rtl:left-0 w-1/4  h-24"    ></div>
@@ -187,6 +187,6 @@
 
 
 
-
+<x-progress-bar/>
 </body>
 </html>

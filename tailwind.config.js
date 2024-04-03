@@ -140,6 +140,12 @@ export default {
                 'darkgray':'#676868',
                 'yellow':'#FBBC04',
                 'gray-600':'#353535',
+                'lightpink':'#ffecf5',
+                'palegray':'#F7F7F7',
+                'paleorange':'#F4E7DA',
+                'graylight':'#C8C6C6',
+                'grayishpink':'#F4F1F2',
+                'verypalegray':'#F8F8F8',
             }
         },
     },
